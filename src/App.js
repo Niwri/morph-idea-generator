@@ -50,7 +50,7 @@ function App() {
   const removeCount = (event) => {
     var newNum = [...numOfAdds];
 
-    if(newNum[event.target.id-1] > 1) 
+    if(newNum[event.target.id-1] > 1) {
       newNum[event.target.id-1]-=1;
 
       var newFunctions = [...functionsHeck];
@@ -59,6 +59,7 @@ function App() {
   
       setFunctionsHeck(newFunctions);
       console.log(functionsHeck);
+    }
 
     setNumOfAdds(newNum);
   }
