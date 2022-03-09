@@ -55,7 +55,7 @@ function App() {
 
       var newFunctions = [...functionsHeck];
 
-      newFunctions[event.target.id].shift();
+      newFunctions[event.target.id-1].shift();
   
       setFunctionsHeck(newFunctions);
       console.log(functionsHeck);
@@ -98,7 +98,6 @@ function App() {
   }
 
   const addIdea = (ideas, ideaName, index, secondIndex) => {
-
 
     if(index>=functionsHeck.length) {
       ideas.push(ideaName);
