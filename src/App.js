@@ -55,7 +55,7 @@ function App() {
 
       var newFunctions = [...functionsHeck];
 
-      newFunctions[event.target.id-1].shift();
+      newFunctions[event.target.id-1].pop();
   
       setFunctionsHeck(newFunctions);
       console.log(functionsHeck);
